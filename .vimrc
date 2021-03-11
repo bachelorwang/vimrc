@@ -6,3 +6,5 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'ycm-core/YouCompleteMe'
+
+set clipboard=unnamedplus
