@@ -1,18 +1,17 @@
-set nocompatible
-filetype off
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'ycm-core/YouCompleteMe'
-Plugin 'rhysd/vim-clang-format'
-
-call vundle#end()
-filetype plugin indent on
+call plug#begin('~/.vim/plugged')
+Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
+Plug 'rhysd/vim-clang-format'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
+set encoding=utf-8
 set autoindent
 set expandtab
 set tabstop=4
 set shiftwidth=4
 set clipboard=unnamedplus
-nmap <C-K> :ClangFormat<CR>
+
+let mapleader=","
+nnoremap <leader>f :ClangFormat<CR>
+nnoremap <leader>n :NERDTree<CR>
+nnoremap <leader>t :NERDTreeToggle<CR>
+
