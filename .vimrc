@@ -18,4 +18,5 @@ let NERDCompactSexyComs=1
 nnoremap <leader>f :ClangFormat<CR>
 nnoremap <leader>n :NERDTree<CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <leader>d :call CocAction('jumpDefinition', 'tabe')<CR>
 inoremap <silent><expr> <TAB> pumvisible() ? "\<TAB>" : coc#refresh()
