@@ -18,4 +18,4 @@ let NERDCompactSexyComs=1
 nnoremap <leader>f :ClangFormat<CR>
 nnoremap <leader>n :NERDTree<CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
-
+inoremap <silent><expr> <TAB> pumvisible() ? "\<TAB>" : coc#refresh()
