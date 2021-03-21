@@ -3,6 +3,7 @@ Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 Plug 'rhysd/vim-clang-format'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'preservim/nerdcommenter'
+Plug 'jackguo380/vim-lsp-cxx-highlight'
 call plug#end()
 set encoding=utf-8
 set number
