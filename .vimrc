@@ -12,6 +12,7 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set clipboard=unnamedplus
+highlight CocFloating ctermbg=Black
 
 let mapleader=","
 let NERDSpaceDelims=1
