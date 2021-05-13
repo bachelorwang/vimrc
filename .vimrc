@@ -14,6 +14,10 @@ set shiftwidth=4
 set clipboard=unnamedplus
 highlight CocFloating ctermbg=Black
 
+" for lisp 
+let g:lisp_rainbow=1
+let g:paredit_electric_return=0
+
 let mapleader=","
 let NERDSpaceDelims=1
 let NERDCompactSexyComs=1
@@ -21,9 +25,10 @@ nnoremap <leader>f :call CocAction('format')<CR>
 nnoremap <leader>n :NERDTree<CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
 nnoremap <leader>d :call CocAction('jumpDefinition', 'tabe')<CR>
-nnoremap <leader>m :emenu <C-z>
 inoremap <silent><expr> <TAB> pumvisible() ? "\<TAB>" : coc#refresh()
 
-set wildmenu
 source $VIMRUNTIME/menu.vim
+set wildmenu
 set wildcharm=<C-z>
+nnoremap <C-m> :emenu <C-z>
+
