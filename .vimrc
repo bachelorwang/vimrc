@@ -21,4 +21,9 @@ nnoremap <leader>f :call CocAction('format')<CR>
 nnoremap <leader>n :NERDTree<CR>
 nnoremap <leader>t :NERDTreeToggle<CR>
 nnoremap <leader>d :call CocAction('jumpDefinition', 'tabe')<CR>
+nnoremap <leader>m :emenu <C-z>
 inoremap <silent><expr> <TAB> pumvisible() ? "\<TAB>" : coc#refresh()
+
+set wildmenu
+source $VIMRUNTIME/menu.vim
+set wildcharm=<C-z>
