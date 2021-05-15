@@ -17,6 +17,7 @@ highlight CocFloating ctermbg=Black
 " for lisp 
 let g:lisp_rainbow=1
 let g:paredit_electric_return=0
+let g:slimv_swank_cmd = '! screen -d -m -t REPL-SBCL sbcl --load ~/.vim/slime/start-swank.lisp'
 
 let mapleader=","
 let NERDSpaceDelims=1
