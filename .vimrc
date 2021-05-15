@@ -15,9 +15,10 @@ set clipboard=unnamedplus
 highlight CocFloating ctermbg=Black
 
 " for lisp 
+let g:slimv_leader=';'
 let g:lisp_rainbow=1
 let g:paredit_electric_return=0
-let g:slimv_swank_cmd = '! screen -d -m -t REPL-SBCL sbcl --load ~/.vim/slime/start-swank.lisp'
+let g:slimv_repl_split_size=5
 
 let mapleader=","
 let NERDSpaceDelims=1
